@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.headerApp {
+  width: 100%;
+}
+.headerApp--title {
+  display: inline-block;
+  width: 15rem;
+}
+
+/*# sourceMappingURL=main.css.map */
