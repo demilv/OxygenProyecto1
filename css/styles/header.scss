@@ -1,8 +1,22 @@
 .headerApp{
     width:100%;
+    justify-content: space-around;
+    height:70px;
 
     &--title{
         display:inline-block;
         width:15rem;
+        margin-left: 5%;
+        font-size: 2rem;
+        font-weight: 300;
+        position:absolute;
+        left:0;
+    }
+    &--opciones{
+        font-size: 20px;
+        margin-right: 5%;
+        display: inline-block;
+        position: right;
+        right:0;
     }
 }
