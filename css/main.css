@@ -8,23 +8,25 @@ body {
   min-width: 320px;
 }
 
-.headerApp {
+.navApp {
   width: 100%;
   justify-content: space-around;
-  height: 70px;
-  position: relative;
+  height: 4.375rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px;
 }
-.headerApp--title {
+.navApp__title {
   display: inline-block;
-  width: 15rem;
+  width: 12.875rem;
+  line-height: 2.313rem;
+  padding-top: 5%;
   margin-left: 5%;
   font-size: 2rem;
   font-weight: 300;
   position: absolute;
   left: 0;
 }
-.headerApp--opciones {
-  font-size: 20px;
+.navApp__opciones {
+  margin-top: 6%;
   margin-right: 5%;
   display: inline-block;
   position: absolute;
