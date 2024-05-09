@@ -4,11 +4,25 @@
     margin-top: 0.813rem;
     &__title{
         margin: 0 auto;
-        width:19.563rem;
+        width:18.938rem;
         height:7rem;
         font-family: "Raleway", sans-serif;
         font-weight: 300;
         line-height: 2.188rem;
         font-size:1.875rem;
+        margin-bottom: 1.563rem;;
+    }
+
+    &__achievements1{        
+        margin: 0 auto;
+        width:7.313rem;
+        height:8.75rem;
+        &__img1{
+            
+        }
+        &__img2{
+            position: absolute;
+            left:11.65rem;
+        }
     }
 }
