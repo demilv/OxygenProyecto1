@@ -75,13 +75,14 @@
         margin: 0 auto;
         width:176px;
         height:167px;
+        margin-bottom: 3.125rem;
         &__img2{
             position: absolute;
             padding-top: 0.38rem;
             left:11.75rem;
         }
         &__amounttxt{
-            margin-top: 0.813rem;
+            margin-top: 0.889rem;
             font-family: "Raleway", sans-serif;
             font-weight:800;
             font-size:1.25rem;
@@ -92,10 +93,10 @@
             margin-top: 1.188rem;
             font-family: "Raleway", sans-serif;
             font-weight:400;
-            font-size: 1rem;
-            line-height: 1.188rem;
+            font-size: 1.063rem;
+            line-height: 1.25rem;
             color:#A5A5A5;      
-            padding-left: 1.5rem;      
+            padding-left: 1.75rem;      
             padding-right: 2.2rem;
         }
     }
