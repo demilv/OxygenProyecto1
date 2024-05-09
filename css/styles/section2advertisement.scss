@@ -100,4 +100,45 @@
             padding-right: 2.2rem;
         }
     }
+
+    &__goforit{
+        align-items: start;
+        &__1{
+            padding-top: 2.625rem;
+            margin: 0 auto;
+            width:314px;
+            height:370px;
+            margin-bottom: 3.125rem;            
+            &__img1{
+                padding-top: 2.319rem;
+                padding-right: 1rem;
+            }
+            &__img2{
+                padding-top: 1rem;
+                position: absolute;
+                left:11.3rem;
+                z-index: -1;
+            }
+            &__title{
+                margin-top: 1.685rem;
+                font-family: "Raleway", sans-serif;
+                font-weight:400;
+                font-size:1.875rem;
+                line-height:2.201rem;
+                width:12.375rem;
+                height:4.5rem;
+                margin-left: 1.375rem;
+            }
+            &__subject{
+                margin-top: 1.188rem;
+                font-family: "Raleway", sans-serif;
+                font-weight:400;
+                font-size: 1.063rem;
+                line-height: 1.25rem;
+                color:#A5A5A5;      
+                padding-left: 1.75rem;      
+                padding-right: 2.2rem;
+            }
+        }
+    }
 }
