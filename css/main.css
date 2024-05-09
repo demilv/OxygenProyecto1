@@ -121,8 +121,8 @@ body {
 }
 .advertisement__achievements2 {
   margin: 0 auto;
-  width: 176px;
-  height: 167px;
+  width: 11rem;
+  height: 10.438rem;
   margin-bottom: 1.563rem;
 }
 .advertisement__achievements2__img2 {
@@ -150,8 +150,8 @@ body {
 }
 .advertisement__achievements3 {
   margin: 0 auto;
-  width: 176px;
-  height: 167px;
+  width: 10.188rem;
+  height: 10.5rem;
   margin-bottom: 3.125rem;
 }
 .advertisement__achievements3__img2 {
@@ -178,27 +178,32 @@ body {
   padding-right: 2.2rem;
 }
 .advertisement__goforit {
+  padding-top: 2.319rem;
+  background-color: #F7F7F7;
   align-items: start;
 }
 .advertisement__goforit__1 {
-  padding-top: 2.625rem;
+  background-color: white;
+  padding-top: 0.8rem;
   margin: 0 auto;
   width: 314px;
   height: 370px;
   margin-bottom: 2.563rem;
+  position: relative;
 }
 .advertisement__goforit__1__img1 {
-  padding-top: 2.319rem;
+  position: absolute;
+  top: 2.175rem;
+  left: 3.3rem;
   padding-right: 1rem;
+  z-index: 1;
 }
 .advertisement__goforit__1__img2 {
-  padding-top: 1rem;
-  position: absolute;
-  left: 11.3rem;
-  z-index: -1;
+  padding-bottom: 0.75rem;
+  padding-left: 6rem;
 }
 .advertisement__goforit__1__title {
-  margin-top: 1.685rem;
+  margin-top: 2.685rem;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1.875rem;
@@ -219,6 +224,7 @@ body {
   margin-left: 1.35rem;
 }
 .advertisement__goforit__2 {
+  background-color: white;
   margin: 0 auto;
   width: 315px;
   height: 370px;
@@ -247,7 +253,7 @@ body {
 }
 .advertisement__goforit__2__text {
   text-align: left;
-  margin-top: 0.625rem;
+  margin-top: 1.125rem;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   line-height: 1.313rem;
@@ -257,41 +263,42 @@ body {
   margin-left: 1.35rem;
 }
 .advertisement__goforit__3 {
+  background-color: white;
   margin: 0 auto;
-  width: 314px;
-  height: 370px;
+  width: 19.625rem;
+  height: 30.413rem;
+  padding-top: 1.938rem;
+  position: relative;
 }
 .advertisement__goforit__3__title {
   text-align: left;
-  margin-top: 1.938rem;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1.875rem;
   line-height: 2.201rem;
   width: 17.125rem;
-  height: 4.5rem;
-  margin-left: 1.375rem;
+  height: 6.813rem;
+  margin-left: 1.25rem;
 }
 .advertisement__goforit__3__text {
   text-align: left;
-  margin-top: 0.625rem;
+  margin-top: 1.271rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.313rem;
+  font-size: 1rem;
+  line-height: 1.362rem;
   font-weight: 400;
-  width: 17rem;
-  height: 5.25rem;
-  margin-left: 1.35rem;
+  width: 17.125rem;
+  height: 7.125rem;
+  margin-left: 1.25rem;
 }
 .advertisement__goforit__3__img1 {
-  padding-top: 2.319rem;
-  padding-right: 1rem;
+  padding-top: 1.042rem;
 }
 .advertisement__goforit__3__img2 {
-  padding-top: 1rem;
   position: absolute;
-  left: 11.3rem;
-  z-index: -1;
+  top: 19.7rem;
+  left: -0.6rem;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
