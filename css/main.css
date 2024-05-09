@@ -16,28 +16,57 @@ body {
   color: #08A6E4;
 }
 .navApp__title {
+  font-family: "Raleway", sans-serif;
   display: inline-block;
+  margin-block-start: 0%;
   width: 12.875rem;
   line-height: 2.313rem;
   padding-top: 5%;
-  margin-left: 5%;
+  margin-left: 6.5%;
   font-size: 2rem;
   font-weight: 300;
-  position: absolute;
-  left: 0;
 }
 .navApp__opciones {
   width: 1.2875rem;
   font-size: 1.8rem;
   margin-top: 5%;
   margin-right: 5%;
+  margin-left: 25%;
   display: inline-block;
-  position: absolute;
-  right: 0;
   border: none;
   text-decoration: none;
   background-color: white;
   color: #08A6E4;
+}
+
+.sellMore {
+  width: 19.375rem;
+  height: 13.313rem;
+  margin: 0 auto;
+  margin-top: 6.25rem;
+  text-align: center;
+}
+.sellMore__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.188rem;
+  line-height: 2.568rem;
+  font-weight: 400;
+}
+.sellMore__content {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.438rem;
+  padding: 0 2rem;
+}
+.sellMore__button {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1.75rem;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
+  border-radius: 2.5rem;
+  padding: 1.75rem 6.35rem;
 }
 
 /*# sourceMappingURL=main.css.map */

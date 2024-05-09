@@ -6,24 +6,23 @@
     color: #08A6E4;
 
     &__title{
+        font-family: "Raleway", sans-serif;
         display:inline-block;
+        margin-block-start: 0%;
         width:12.875rem;
         line-height: 2.313rem;
         padding-top: 5%;
-        margin-left: 5%;
+        margin-left: 6.5%;
         font-size: 2rem;
         font-weight: 300;
-        position:absolute;
-        left:0;        
     }
     &__opciones{
         width: 1.2875rem;
         font-size: 1.8rem;
         margin-top: 5%;
         margin-right: 5%;
+        margin-left: 25%;
         display: inline-block;
-        position: absolute;
-        right:0;
         border: none;
         text-decoration: none;
         background-color: white;

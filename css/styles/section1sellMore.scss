@@ -1,0 +1,32 @@
+.sellMore{
+    width:19.375rem;
+    height:13.313rem;   
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    text-align: center;
+
+    &__title{
+        font-family: "Raleway", sans-serif;
+        font-size: 2.188rem;
+        line-height: 2.568rem;
+        font-weight: 400;
+    }
+
+    &__content{
+        font-family: "Open Sans", sans-serif;
+        margin-top: 1.25rem;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.438rem;
+        padding: 0 2rem;
+    }
+
+    &__button{
+        font-family: "Open Sans", sans-serif;
+        margin-top:1.75rem;
+        background-color: #08A6E4;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+        border-radius: 2.5rem;
+        padding: 1.75rem 6.35rem;
+    }
+}
