@@ -185,7 +185,7 @@ body {
   margin: 0 auto;
   width: 314px;
   height: 370px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.563rem;
 }
 .advertisement__goforit__1__img1 {
   padding-top: 2.319rem;
@@ -207,15 +207,91 @@ body {
   height: 4.5rem;
   margin-left: 1.375rem;
 }
-.advertisement__goforit__1__subject {
-  margin-top: 1.188rem;
+.advertisement__goforit__1__text {
+  text-align: left;
+  margin-top: 0.625rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  font-weight: 400;
+  width: 17rem;
+  height: 5.25rem;
+  margin-left: 1.35rem;
+}
+.advertisement__goforit__2 {
+  margin: 0 auto;
+  width: 315px;
+  height: 370px;
+  margin-bottom: 2.625rem;
+}
+.advertisement__goforit__2__img1 {
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+}
+.advertisement__goforit__2__img2 {
+  padding-top: 1.2rem;
+  position: absolute;
+  left: 7.3rem;
+  z-index: 1;
+}
+.advertisement__goforit__2__title {
+  text-align: start;
+  margin-top: 1.685rem;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 1.063rem;
-  line-height: 1.25rem;
-  color: #A5A5A5;
-  padding-left: 1.75rem;
-  padding-right: 2.2rem;
+  font-size: 1.875rem;
+  line-height: 2.201rem;
+  width: 13.625rem;
+  height: 4.375rem;
+  margin-left: 1.375rem;
+}
+.advertisement__goforit__2__text {
+  text-align: left;
+  margin-top: 0.625rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  font-weight: 400;
+  width: 17rem;
+  height: 5.25rem;
+  margin-left: 1.35rem;
+}
+.advertisement__goforit__3 {
+  margin: 0 auto;
+  width: 314px;
+  height: 370px;
+}
+.advertisement__goforit__3__title {
+  text-align: left;
+  margin-top: 1.938rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 2.201rem;
+  width: 17.125rem;
+  height: 4.5rem;
+  margin-left: 1.375rem;
+}
+.advertisement__goforit__3__text {
+  text-align: left;
+  margin-top: 0.625rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  font-weight: 400;
+  width: 17rem;
+  height: 5.25rem;
+  margin-left: 1.35rem;
+}
+.advertisement__goforit__3__img1 {
+  padding-top: 2.319rem;
+  padding-right: 1rem;
+}
+.advertisement__goforit__3__img2 {
+  padding-top: 1rem;
+  position: absolute;
+  left: 11.3rem;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */
