@@ -77,4 +77,19 @@ body {
   margin-top: 3.188rem;
 }
 
+.advertisement {
+  height: 130.645rem;
+  text-align: center;
+  margin-top: 0.813rem;
+}
+.advertisement__title {
+  margin: 0 auto;
+  width: 19.563rem;
+  height: 7rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 2.188rem;
+  font-size: 1.875rem;
+}
+
 /*# sourceMappingURL=main.css.map */
