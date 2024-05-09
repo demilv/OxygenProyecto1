@@ -24,5 +24,21 @@
             position: absolute;
             left:11.65rem;
         }
+        &__amounttxt{
+            margin-top: 0.886rem;
+            font-family: "Raleway", sans-serif;
+            font-weight:800;
+            font-size:1.25rem;
+            line-height:1.5rem;
+            letter-spacing: 0.373rem;
+        }
+        &__subject{
+            margin-top: 1.194rem;
+            font-family: "Raleway", sans-serif;
+            font-weight:400;
+            font-size: 1.063rem;
+            line-height: 1.25rem;
+            color:#A5A5A5;            
+        }
     }
 }
