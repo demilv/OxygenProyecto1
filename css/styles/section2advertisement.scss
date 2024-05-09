@@ -17,11 +17,10 @@
         margin: 0 auto;
         width:7.313rem;
         height:8.75rem;
-        &__img1{
-            
-        }
+        margin-bottom: 1.563rem;
         &__img2{
             position: absolute;
+            padding-top: 0.188rem;
             left:11.65rem;
         }
         &__amounttxt{
@@ -39,6 +38,65 @@
             font-size: 1.063rem;
             line-height: 1.25rem;
             color:#A5A5A5;            
+        }
+    }
+
+    &__achievements2{
+        margin: 0 auto;
+        width:176px;
+        height:167px;
+        margin-bottom: 1.563rem;
+        &__img2{
+            position: absolute;
+            padding-top: 0.766rem;
+            left:11rem;
+        }
+        &__amounttxt{
+            margin-top: 0.813rem;
+            font-family: "Raleway", sans-serif;
+            font-weight:800;
+            font-size:1.25rem;
+            line-height:1.5rem;
+            letter-spacing: 0.373rem;
+        }
+        &__subject{
+            margin-top: 1.188rem;
+            font-family: "Raleway", sans-serif;
+            font-weight:400;
+            font-size: 1rem;
+            line-height: 1.188rem;
+            color:#A5A5A5;      
+            padding-left: 1.5rem;      
+            padding-right: 2.2rem;
+        }
+    }
+
+    &__achievements3{
+        margin: 0 auto;
+        width:176px;
+        height:167px;
+        &__img2{
+            position: absolute;
+            padding-top: 0.38rem;
+            left:11.75rem;
+        }
+        &__amounttxt{
+            margin-top: 0.813rem;
+            font-family: "Raleway", sans-serif;
+            font-weight:800;
+            font-size:1.25rem;
+            line-height:1.5rem;
+            letter-spacing: 0.373rem;
+        }
+        &__subject{
+            margin-top: 1.188rem;
+            font-family: "Raleway", sans-serif;
+            font-weight:400;
+            font-size: 1rem;
+            line-height: 1.188rem;
+            color:#A5A5A5;      
+            padding-left: 1.5rem;      
+            padding-right: 2.2rem;
         }
     }
 }
