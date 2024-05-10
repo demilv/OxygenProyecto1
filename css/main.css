@@ -452,16 +452,36 @@ body {
   line-height: 1.375rem;
   text-align: left;
   margin-left: 1.875rem;
+  margin-bottom: 2.375rem;
 }
 .questions__img {
-  display: inline-block;
+  display: inline;
+  margin-left: 1.875rem;
 }
-.questions__mail .questions__phone {
+.questions__text {
+  display: inline-block;
   font-family: "Open Sans";
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.375rem;
   text-align: left;
+  width: 80%;
+  color: #A5A5A5;
+  min-height: 1.688rem;
+  vertical-align: top;
+}
+.questions__form {
+  height: 157px;
+  text-align: left;
+  margin-left: 1.875rem;
+}
+
+.text1 {
+  margin-bottom: 0.625rem;
+}
+
+.text2 {
+  margin-bottom: 3.313rem;
 }
 
 /*# sourceMappingURL=main.css.map */
