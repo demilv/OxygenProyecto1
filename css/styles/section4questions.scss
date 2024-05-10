@@ -44,6 +44,55 @@
         height: 157px;
         text-align: left;
         margin-left: 1.875rem;
+
+        &__label{
+            display: block;
+            font-family: "Open Sans";
+            font-size: 0.688rem;
+            font-weight: 600;
+            line-height: 0.936rem;
+            letter-spacing: 0.205rem;
+            text-align: left;
+            color:#08A6E4;
+            margin-bottom: 1.324rem;
+        }
+
+        &__input{
+            border:none;
+            border-bottom: 1px solid #95989A;
+            margin-bottom: 1.75rem;
+            width:19.5rem;
+            display: block;
+        }
+        &__checkbox{
+            background-color: #FFFFFF;
+            display: inline-block;
+            vertical-align: top;
+        }
+        &__text{
+            display: inline-block;
+            width:17.313rem;
+            font-family: "Open Sans";
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.021rem;
+            text-align: left;
+        }
+        &__send{
+            width:14.125rem;
+            height:3.563rem;
+            margin-left: 7.25rem;
+            display:block;
+            box-shadow: 5px 10px 14px 0px #07ACE64A;
+            background-color: #08A6E4;
+            border-radius: 2.188rem;
+            font-family: "Open Sans";
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 17.7px;
+            text-align: left;
+
+        }
     }
 }
 
