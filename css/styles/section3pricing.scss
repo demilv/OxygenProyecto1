@@ -25,11 +25,42 @@
         border-radius: 1.125rem;    
         text-align: center;    
         &__containerMode{
-            width:45%;
+            width:48%;
+            display: inline-block;
+            &__title{                
+                font-family: "Raleway";
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 1.5rem;
+                margin-top: 4.375rem;
+                color: #13253B;
+                padding-left: 1rem;
+            }
+            &__amount{
+                font-family: "Open Sans";
+                font-size: 2.875rem;
+                font-weight: 300;
+                line-height: 4rem;
+                padding-left: 1rem;
+            }
+            &__description{
+                font-family: "Raleway";
+                font-size: 0.75rem;
+                font-weight: 700;
+                line-height: 0.881rem;
+                padding-left: 1rem;
+            }
         }
 
         &__containerAdvantages{
             width:50%;
+            display: inline-block;
+            &__img{
+                display: inline-block;
+            }
+            &__line{
+                display: inline-block;
+            }
         }
     }
     &__button{
