@@ -1,6 +1,7 @@
 .questions{
     margin-top: 3.313rem;
     text-align: center;
+    margin-bottom: 17.75rem;
 
     &__title{
         font-family: "Raleway";
@@ -77,21 +78,21 @@
             font-weight: 400;
             line-height: 1.021rem;
             text-align: left;
+            margin-bottom: 2.063rem;
         }
         &__send{
             width:14.125rem;
             height:3.563rem;
-            margin-left: 7.25rem;
+            margin-left: 5.5rem;
             display:block;
             box-shadow: 5px 10px 14px 0px #07ACE64A;
             background-color: #08A6E4;
             border-radius: 2.188rem;
             font-family: "Open Sans";
-            font-size: 13px;
+            font-size: 0.813rem;
             font-weight: 700;
-            line-height: 17.7px;
-            text-align: left;
-
+            line-height: 1.106rem;
+            color:#FFFFFF;
         }
     }
 }
