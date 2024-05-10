@@ -13,6 +13,7 @@
         height:2.625rem;
         width:7.125rem;
         display: inline-block;
+        margin-bottom: 0.875rem;
     }
     &__art{
         width:18.313rem;
@@ -20,12 +21,31 @@
         border: 1px solid #FB3B64;
         position: relative;
         display: inline-block;
+        margin-bottom: 3.375rem;
+        border-radius: 1.125rem;    
+        text-align: center;    
+        &__containerMode{
+            width:45%;
+        }
 
-
+        &__containerAdvantages{
+            width:50%;
+        }
     }
     &__button{
         position: absolute;
         width:9.375rem;
         height:3.125rem;
+        right:7.1565rem;
+        margin-top: 15.688rem; 
+        border-radius: 1.438rem;
+        border-color: 0px;
+        background-color: #EB476E;
+        color:#FFFFFF;
+        border-width: 0;
+        font-size: 0.813rem;
+        font-weight: 700;
+        line-height: 1.106rem;
+        font-family: "Open Sans", "sans serif";
     }
 }
