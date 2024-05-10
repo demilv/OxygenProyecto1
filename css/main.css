@@ -305,6 +305,29 @@ body {
 .pricing {
   margin-top: 3.334rem;
   text-align: center;
+  align-items: center;
+}
+.pricing__mainTitle {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.641rem;
+  height: 2.625rem;
+  width: 7.125rem;
+  display: inline-block;
+}
+.pricing__art {
+  width: 18.313rem;
+  height: 17.188rem;
+  border: 1px solid #FB3B64;
+  position: relative;
+  display: inline-block;
+}
+.pricing__button {
+  position: absolute;
+  width: 9.375rem;
+  height: 3.125rem;
 }
 
 /*# sourceMappingURL=main.css.map */
