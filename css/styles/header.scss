@@ -2,29 +2,81 @@
     width:100%;
     height:4.375rem;
     box-shadow: 0px 0.188rem 0.376rem 0px #0000004A;
-    color: #08A6E4;
+    
 
-    &__title{
-        font-family: "Raleway", sans-serif;
-        display:inline-block;
-        margin-block-start: 0%;
-        width:12.875rem;
-        line-height: 2.313rem;
-        padding-top: 5%;
-        margin-left: 6.5%;
-        font-size: 2rem;
-        font-weight: 300;
+    &__main{
+        &__title{
+            font-family: "Raleway", sans-serif;
+            display:inline-block;
+            margin-block-start: 0%;
+            width:12.875rem;
+            line-height: 2.313rem;
+            padding-top: 5%;
+            margin-left: 6.5%;
+            font-size: 2rem;
+            font-weight: 300;
+            color: #08A6E4;
+        }
+        &__opciones{
+            width: 1.2875rem;
+            font-size: 1.8rem;
+            margin-top: 5%;
+            margin-right: 5%;
+            margin-left: 25%;
+            display: inline-block;
+            border: none;
+            text-decoration: none;
+            background-color: white;
+            color:#08A6E4
+        }
     }
-    &__opciones{
-        width: 1.2875rem;
-        font-size: 1.8rem;
-        margin-top: 5%;
-        margin-right: 5%;
-        margin-left: 25%;
-        display: inline-block;
-        border: none;
-        text-decoration: none;
-        background-color: white;
-        color:#08A6E4
+    &__other{
+        &__opcionesWide{
+            display: none;
+        }
     }
+}
+
+@media only screen and (min-width: 1000px) {
+    .navApp{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        &__main{
+            min-width: 45%;
+            &__title{
+                vertical-align: top;
+                padding-top: 2%;
+                margin-left: 8.5rem;
+            }
+
+            &__opciones{
+                display:none;
+            }
+        }  
+
+        &__other{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 45%;
+            &__opcionesWide{    
+                padding-top: 3.5%;
+                min-height: 4.375rem;    
+                display: flex;        
+                font-family: "Open Sans";
+                font-size: 0.688rem;
+                font-weight: 700;
+                line-height: 0.938rem;
+                letter-spacing: 0.205rem;
+                text-align: center;
+                color: #A5A5A5;
+            }
+            &__opcionesWide:hover{
+                color: #000000;
+                border-bottom: 4px solid #08A6E4;
+            }
+            
+        }
+    }    
 }
