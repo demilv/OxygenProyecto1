@@ -229,15 +229,61 @@
 }
 @media only screen and (min-width: 1000px) {
     .advertisement{
-        min-width: 75rem;
+        min-width: 100%;
         display:grid;
         flex-direction: row;
         justify-content: center;
         align-content: center;
+        grid-template-rows: 1fr 2fr 3.33fr 3.33fr 3.33fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
         &__title{
-            display: block;
-            min-width: 100%;
+            grid-row: 1;
+            min-width: 70rem;
+            grid-column: 2 / 5;
         }
+        &__achievements1, &__achievements2, &__achievements3{
+            grid-row: 2;            
+        }
+
+        &__achievements1{
+            position:relative;
+            grid-column: 2 / 3;
+            &__img2{
+                left: 3.5rem
+            }
+        }
+
+        &__achievements2{
+            position:relative;
+            grid-column: 3 / 4;
+            &__img2{
+                left:4.8rem
+            }
+        }
+
+        &__achievements3{
+            position:relative;
+            grid-column: 4 / 5;
+            &__img2{
+                left:5rem;
+            }
+        }
+
+
+        &__goforit{
+            grid-row: 3 / 6;
+            grid-column: 1 / 6;
+            &__1{
+                grid-row: 3;
+                grid-column: 2 / 5;
+            }
+            &__2{
+
+            }
+            &__3{
+
+            }
+        }        
     }
 
 }

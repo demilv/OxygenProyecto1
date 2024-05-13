@@ -371,15 +371,50 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .advertisement {
-    min-width: 75rem;
+    min-width: 100%;
     display: grid;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    grid-template-rows: 1fr 2fr 3.33fr 3.33fr 3.33fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
   }
   .advertisement__title {
-    display: block;
-    min-width: 100%;
+    grid-row: 1;
+    min-width: 70rem;
+    grid-column: 2/5;
+  }
+  .advertisement__achievements1, .advertisement__achievements2, .advertisement__achievements3 {
+    grid-row: 2;
+  }
+  .advertisement__achievements1 {
+    position: relative;
+    grid-column: 2/3;
+  }
+  .advertisement__achievements1__img2 {
+    left: 3.5rem;
+  }
+  .advertisement__achievements2 {
+    position: relative;
+    grid-column: 3/4;
+  }
+  .advertisement__achievements2__img2 {
+    left: 4.8rem;
+  }
+  .advertisement__achievements3 {
+    position: relative;
+    grid-column: 4/5;
+  }
+  .advertisement__achievements3__img2 {
+    left: 5rem;
+  }
+  .advertisement__goforit {
+    grid-row: 3/6;
+    grid-column: 1/6;
+  }
+  .advertisement__goforit__1 {
+    grid-row: 3;
+    grid-column: 2/5;
   }
 }
 .pricing {
