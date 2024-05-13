@@ -227,3 +227,17 @@
         }
     }
 }
+@media only screen and (min-width: 1000px) {
+    .advertisement{
+        min-width: 75rem;
+        display:grid;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        &__title{
+            display: block;
+            min-width: 100%;
+        }
+    }
+
+}
