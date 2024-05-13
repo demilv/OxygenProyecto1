@@ -546,6 +546,21 @@ body {
   transition: box-shadow 0.5s;
   transition: transform 0.5s ease;
 }
+.pricing__art__button {
+  position: absolute;
+  width: 9.375rem;
+  height: 3.125rem;
+  right: 4.1565rem;
+  margin-top: 15.688rem;
+  border-radius: 1.438rem;
+  border-color: 0px;
+  color: #FFFFFF;
+  border-width: 0;
+  font-size: 0.813rem;
+  font-weight: 700;
+  line-height: 1.106rem;
+  font-family: "Open Sans", "sans serif";
+}
 .pricing__art__containerMode {
   width: 40%;
   margin-right: 1rem;
@@ -597,21 +612,6 @@ body {
   box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
   transform: scale(1.15);
 }
-.pricing__button {
-  position: absolute;
-  width: 9.375rem;
-  height: 3.125rem;
-  right: 4.1565rem;
-  margin-top: 15.688rem;
-  border-radius: 1.438rem;
-  border-color: 0px;
-  color: #FFFFFF;
-  border-width: 0;
-  font-size: 0.813rem;
-  font-weight: 700;
-  line-height: 1.106rem;
-  font-family: "Open Sans", "sans serif";
-}
 
 .redButton {
   background-color: #EB476E;
@@ -649,6 +649,46 @@ body {
   color: #55DFB4;
 }
 
+@media only screen and (min-width: 1000px) {
+  .pricing {
+    min-width: 79.125rem;
+    min-height: 38.5rem;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+  }
+  .pricing__mainTitle {
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+  .pricing__art {
+    min-width: 23.25rem;
+    min-height: 30.313rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing__art__button {
+    margin-top: 28.7rem;
+    right: 6.7565rem;
+  }
+  .pricing__art__containerAdvantages__line {
+    text-align: center;
+  }
+  .pricing__mainTitle, .pricing__art {
+    place-self: center;
+  }
+  .pricing__mainTitle__containerMode, .pricing__mainTitle__containerAdvantages, .pricing__art__containerMode, .pricing__art__containerAdvantages {
+    place-self: center;
+  }
+  .containerRed {
+    margin-left: 15rem;
+  }
+  .containerGreen {
+    margin-right: 15rem;
+  }
+}
 .questions {
   margin-top: 3.313rem;
   text-align: center;
