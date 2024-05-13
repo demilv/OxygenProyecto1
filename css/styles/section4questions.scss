@@ -103,3 +103,43 @@
 .text2{
     margin-bottom: 3.313rem;
 }
+
+@media only screen and (min-width: 1000px) {
+
+    .questions{
+        min-width: 56rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 25.813rem;
+        margin-right: auto;
+        &__img{
+            margin-left: 0;
+            text-align: left;
+        }
+        &__text{
+            display:inline;
+        }
+        &__form{
+            min-width: 28rem;
+            &__input{
+                width:27.5rem;
+            }
+            &__text{
+                width:26.5rem;
+            }
+            &__send{
+                margin-left: 13.5rem;
+            }
+        }
+
+    }
+
+    #questionsDiv{
+        min-width: 35rem;
+    }
+
+    #questionsDivImgs{
+        text-align: left;
+        margin-left: 1.875rem;
+    }
+}

@@ -789,6 +789,41 @@ body {
   margin-bottom: 3.313rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .questions {
+    min-width: 56rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25.813rem;
+    margin-right: auto;
+  }
+  .questions__img {
+    margin-left: 0;
+    text-align: left;
+  }
+  .questions__text {
+    display: inline;
+  }
+  .questions__form {
+    min-width: 28rem;
+  }
+  .questions__form__input {
+    width: 27.5rem;
+  }
+  .questions__form__text {
+    width: 26.5rem;
+  }
+  .questions__form__send {
+    margin-left: 13.5rem;
+  }
+  #questionsDiv {
+    min-width: 35rem;
+  }
+  #questionsDivImgs {
+    text-align: left;
+    margin-left: 1.875rem;
+  }
+}
 .footer {
   box-shadow: 0px 0.188rem 1.376rem 0px rgba(0, 0, 0, 0.2901960784);
   height: 5.563rem;
