@@ -1,6 +1,9 @@
 .questions{
     margin-top: 3.313rem;
-    text-align: center;
+    vertical-align: center;
+    text-align: center;    
+    max-width: 25rem;
+    margin: 0 auto;
     margin-bottom: 17.75rem;
     &__title{
         font-family: "Raleway";

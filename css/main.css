@@ -13,29 +13,31 @@ body {
   height: 4.375rem;
   box-shadow: 0px 0.188rem 0.376rem 0px rgba(0, 0, 0, 0.2901960784);
 }
+.navApp__main {
+  position: relative;
+}
 .navApp__main__title {
   font-family: "Raleway", sans-serif;
   display: inline-block;
-  margin-block-start: 0%;
-  width: 12.875rem;
-  line-height: 2.313rem;
-  padding-top: 5%;
   margin-left: 6.5%;
+  padding-top: 2%;
   font-size: 2rem;
   font-weight: 300;
+  width: 80%;
   color: #08A6E4;
+  vertical-align: top;
 }
 .navApp__main__opciones {
-  width: 1.2875rem;
-  font-size: 1.8rem;
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-left: 25%;
   display: inline-block;
+  font-size: 1.8rem;
+  padding-top: 2%;
+  margin-right: 5%;
+  width: 5%;
   border: none;
   text-decoration: none;
   background-color: white;
   color: #08A6E4;
+  vertical-align: top;
 }
 .navApp__other__opcionesWide {
   display: none;
@@ -118,6 +120,7 @@ body {
 }
 .sellMore__image {
   margin-top: 3.188rem;
+  width: 100%;
 }
 .sellMore__image2 {
   display: none;
@@ -132,7 +135,7 @@ body {
     justify-content: center;
   }
   .sellMore__datacontainer {
-    min-width: 75rem;
+    width: 62.5rem;
   }
   .sellMore__datacontainer__button {
     min-width: 440px;
@@ -168,7 +171,7 @@ body {
 .advertisement__achievements1__img2 {
   position: absolute;
   padding-top: 0.188rem;
-  left: 11.65rem;
+  left: 50%;
 }
 .advertisement__achievements1__amounttxt {
   margin-top: 0.886rem;
@@ -195,7 +198,7 @@ body {
 .advertisement__achievements2__img2 {
   position: absolute;
   padding-top: 0.766rem;
-  left: 11rem;
+  left: 48%;
 }
 .advertisement__achievements2__amounttxt {
   margin-top: 0.813rem;
@@ -224,7 +227,7 @@ body {
 .advertisement__achievements3__img2 {
   position: absolute;
   padding-top: 0.38rem;
-  left: 11.75rem;
+  left: 48%;
 }
 .advertisement__achievements3__amounttxt {
   margin-top: 0.889rem;
@@ -297,6 +300,7 @@ body {
   width: 315px;
   height: 370px;
   margin-bottom: 2.625rem;
+  position: relative;
 }
 .advertisement__goforit__2__img1 {
   padding-top: 0.75rem;
@@ -305,7 +309,7 @@ body {
 .advertisement__goforit__2__img2 {
   padding-top: 1.2rem;
   position: absolute;
-  left: 7.3rem;
+  left: 30%;
   z-index: 1;
 }
 .advertisement__goforit__2__title {
@@ -535,7 +539,8 @@ body {
   line-height: 2.641rem;
   height: 2.625rem;
   width: 7.125rem;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 1.875rem;
 }
 .pricing__art {
@@ -543,7 +548,8 @@ body {
   height: 17.188rem;
   border: 1px solid;
   position: relative;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 3.375rem;
   border-radius: 1.125rem;
   text-align: center;
@@ -695,7 +701,10 @@ body {
 }
 .questions {
   margin-top: 3.313rem;
+  vertical-align: center;
   text-align: center;
+  max-width: 25rem;
+  margin: 0 auto;
   margin-bottom: 17.75rem;
 }
 .questions__title {
@@ -834,7 +843,7 @@ body {
 }
 .footer__textContainer {
   display: inline-block;
-  width: 13.75rem;
+  width: 58%;
 }
 .footer__textContainer__title {
   font-family: "Raleway";
@@ -857,9 +866,9 @@ body {
   color: #A5A5A5;
 }
 .footer__imgContainer {
-  margin-left: 3.563rem;
+  margin-left: 19%;
   display: inline-block;
-  width: 80px;
+  width: 19.2%;
 }
 .footer__imgContainer__img1 {
   margin-right: 1.25rem;

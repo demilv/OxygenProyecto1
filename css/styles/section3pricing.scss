@@ -11,7 +11,8 @@
         line-height: 2.641rem;
         height:2.625rem;
         width:7.125rem;
-        display: inline-block;
+        display: block;
+        margin: 0 auto;
         margin-bottom: 1.875rem;
     }
     &__art{
@@ -19,7 +20,8 @@
         height:17.188rem;
         border: 1px solid;
         position: relative;
-        display: inline-block;
+        display: block;
+        margin: 0 auto;
         margin-bottom: 3.375rem;
         border-radius: 1.125rem;    
         text-align: center;  
