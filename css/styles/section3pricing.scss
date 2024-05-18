@@ -140,17 +140,20 @@
 
 @media only screen and (min-width: 1000px) {
     .pricing{
+        width:100%; 
         min-height: 38.5rem;
         display: grid;
         grid-template-rows: 1fr 4fr;
         grid-template-columns: 1fr 1fr 1fr;
         align-content: center;
         justify-content: center;
+        margin-bottom: 5rem;
 
         &__mainTitle{
             grid-row: 1;
             grid-column: 1 / 4;
             margin: 0 auto;
+            margin-bottom: 5rem;
         }
 
         &__art{
@@ -159,10 +162,11 @@
             display: flex;
             flex-direction: column;
             margin-right: 3rem;
-
+            position: relative;
             &__button{
                 margin-top: 29rem;
-                right:25%;
+                right:24%;
+                width:50%
             }
 
             &__containerAdvantages{
