@@ -111,8 +111,8 @@
             background-color: white;
             padding-top: 0.8rem;
             margin: 0 auto;
-            width:314px;
-            height:370px;
+            width:19.625rem;
+            height:23.125rem;
             margin-bottom: 2.563rem;            
             position:relative;
             &__img1{
@@ -151,8 +151,8 @@
         &__2{
             background-color: white;
             margin: 0 auto;
-            width:315px;
-            height:370px;
+            width:19.688rem;
+            height:23.125rem;
             margin-bottom: 2.625rem;    
             position: relative;        
             &__img1{
@@ -278,7 +278,6 @@
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 2.25fr 2.25fr 1fr;
             &__1{
-                min-width: 70.25rem;
                 grid-row: 1;
                 grid-column: 2 / 4;
                 display: grid;
@@ -311,7 +310,6 @@
                 }
             }
             &__2{
-                min-width: 70.25rem;
                 grid-row: 2;
                 grid-column: 2 / 4;
                 display: grid;
@@ -347,9 +345,7 @@
                 }
             }
             &__3{
-                min-width: 38.94rem;
                 max-height: 23.125rem;
-
                 grid-row: 3;
                 grid-column: 2 / 4;
                 display: grid;

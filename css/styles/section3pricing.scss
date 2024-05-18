@@ -140,7 +140,6 @@
 
 @media only screen and (min-width: 1000px) {
     .pricing{
-        min-width: 79.125rem;
         min-height: 38.5rem;
         display: grid;
         grid-template-rows: 1fr 4fr;
@@ -151,22 +150,40 @@
         &__mainTitle{
             grid-row: 1;
             grid-column: 1 / 4;
+            margin: 0 auto;
         }
 
         &__art{
-            min-width: 23.25rem;
-            min-height: 30.313rem;
+            width: 85%;
+            min-height: 100%;
             display: flex;
             flex-direction: column;
+            margin-right: 3rem;
 
             &__button{
-                margin-top: 28.7rem;
-                right:6.7565rem;
+                margin-top: 29rem;
+                right:25%;
             }
 
             &__containerAdvantages{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                &__wideContainer{
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                    width:50%;
+                    vertical-align: top;
+                    margin-top: 1.5rem;
+                }
+                &__img{
+                    margin-right: 0.5rem;
+                }
                 &__line{
-                    text-align:center;
+                    text-align: center;
+                    margin-top: 0;
                 }
             }
 
@@ -182,11 +199,13 @@
     }
 
     .containerRed{
-        margin-left: 15rem;
+        margin-left: 5rem;
     }
-
+    .containerBlue{
+        margin-left: 3rem;
+    }
     .containerGreen{
-        margin-right: 15rem;
+        margin-left: 1rem;
     }
 
 }
