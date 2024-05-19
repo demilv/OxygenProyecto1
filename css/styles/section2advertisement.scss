@@ -278,22 +278,26 @@
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 2.25fr 2.25fr 1fr;
             &__1{
+                width:85%;
                 grid-row: 1;
                 grid-column: 2 / 4;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 position: relative;
                 &__img1{
+                    left:5%;
+                    top:3.5%;
                     grid-column: 2;
                     grid-row: 1;
-                    min-width: 24.153rem;
-                    padding-top: 5.063rem;
+                    //min-width: 24.153rem;
+                    padding-top: 4.063rem;
+                    width:80%
                 }                
                 &__img2{
                     position:absolute;
-                    min-width: 15.938rem;
-                    top: 4rem;
-                    left:46.5rem
+                    width:30%;
+                    top: 15%;
+                    left:63%;
                 }
                 &__title{
                     grid-column: 1;
@@ -307,6 +311,7 @@
                     margin-top: 8.5rem;
                     padding-bottom: 9rem;      
                     border-bottom: 4px solid red;
+                    width:70%
                 }
             }
             &__2{
