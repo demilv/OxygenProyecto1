@@ -826,11 +826,12 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .questions {
-    min-width: 56rem;
+    width: 100%;
+    min-width: 62.5rem;
     display: flex;
     flex-direction: row;
-    margin-left: 25.813rem;
-    margin-right: auto;
+    justify-content: space-around;
+    margin-right: 0 auto;
   }
   .questions__img {
     margin-left: 0;
@@ -852,7 +853,7 @@ body {
     margin-left: 13.5rem;
   }
   #questionsDiv {
-    min-width: 35rem;
+    width: 60%;
   }
   #questionsDivImgs {
     text-align: left;
