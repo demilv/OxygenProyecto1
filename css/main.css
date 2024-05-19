@@ -419,6 +419,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 2.25fr 2.25fr 1fr;
+    width: 100%;
   }
   .advertisement__goforit__1 {
     width: 85%;
@@ -509,21 +510,22 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    margin-left: 6.5rem;
     padding-top: 0;
+    width: 43%;
+    margin-right: 49.5%;
   }
   .advertisement__goforit__3__img1 {
     position: absolute;
-    max-width: 27.5rem;
+    width: 88%;
     min-height: 23.125rem;
     padding-top: 0;
-    left: 42.8rem;
+    left: 110%;
   }
   .advertisement__goforit__3__img2 {
     position: absolute;
-    min-width: 15.938rem;
+    width: 68%;
     top: 6.138rem;
-    left: 46.5rem;
+    left: 115%;
   }
   .advertisement__goforit__3__title {
     grid-column: 1;
@@ -538,6 +540,8 @@ body {
     font-size: 0.875rem;
     padding-bottom: 9rem;
     border-bottom: 4px solid green;
+    width: 80%;
+    max-width: fit-content;
   }
 }
 .pricing {

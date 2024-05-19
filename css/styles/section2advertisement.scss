@@ -280,6 +280,7 @@
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 2.25fr 2.25fr 1fr;
+            width:100%;            
             &__1{
                 width:85%;
                 grid-row: 1;
@@ -369,21 +370,22 @@
                 grid-column: 2 / 4;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                position: relative;
-                margin-left: 6.5rem;
+                position: relative;                
                 padding-top: 0;
+                width:43%;
+                margin-right: 49.5%;
                 &__img1{
                     position: absolute;
-                    max-width: 27.5rem;
+                    width:88%;
                     min-height: 23.125rem;
                     padding-top: 0;
-                    left: 42.8rem;
+                    left: 110%;
                 }
                 &__img2{
                     position:absolute;
-                    min-width: 15.938rem;
+                    width:68%;
                     top: 6.138rem;
-                    left:46.5rem
+                    left:115%
                 }
                 &__title{
                     grid-column: 1;
@@ -398,6 +400,8 @@
                     font-size: 0.875rem;
                     padding-bottom: 9rem;         
                     border-bottom: 4px solid green;
+                    width:80%;
+                    max-width: fit-content;
                 }
             }
         }        
