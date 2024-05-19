@@ -154,7 +154,10 @@
             width:19.688rem;
             height:23.125rem;
             margin-bottom: 2.625rem;    
-            position: relative;        
+            position: relative;  
+            &__wideImg1{
+                display:none;
+            }      
             &__img1{
                 padding-top: 0.75rem;
                 padding-right: 1rem;
@@ -289,7 +292,7 @@
                     top:3.5%;
                     grid-column: 2;
                     grid-row: 1;
-                    //min-width: 24.153rem;
+                    min-width: 20.153rem;
                     padding-top: 4.063rem;
                     width:80%
                 }                
@@ -298,6 +301,7 @@
                     width:30%;
                     top: 15%;
                     left:63%;
+                    min-width: 15rem;
                 }
                 &__title{
                     grid-column: 1;
@@ -320,31 +324,41 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 position: relative;
-                &__img1{
+                width: 85%;
+                &__wideImg1{
+                    display: inline;
                     grid-column: 1;
                     grid-row: 1;
-                    min-width: 20rem;
-                    margin-top: 0.75rem;
-                    margin-left: 4.375rem;
+                    margin-top: 5%;
+                    margin-left: 10%;
+                    width:150%;
+                    max-width:fit-content;
+                }
+
+                &__img1{
+                   display:none;
                 }
                 &__img2{
                     position:absolute;
-                    min-width: 26.625rem;
-                    top: 1.813rem;
-                    left: 4.375rem;
+                    min-width: 24.625rem;
+                    margin-top: 2%;
+                    left: 5%;
+                    width: 1000%;
+                    max-width: fit-content;
                 }
                 &__title{
                     grid-column: 2;
                     grid-row: 1;
                     margin-top: 5rem;  
-                    margin-left: 11rem;
+                    margin-left: 22%;
                     }
                 &__text{
                     grid-column: 2;
                     grid-row: 1;
                     margin-top: 10rem;
-                    margin-left: 11rem;
-                    min-width: 23.875rem;
+                    margin-left: 22%;
+                    padding-right: 5%;
+                    width:66%;
                     padding-bottom: 9rem;         
                     border-bottom: 4px solid blue;
                 }
