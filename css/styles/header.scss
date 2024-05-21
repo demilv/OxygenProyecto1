@@ -9,7 +9,7 @@
             font-family: "Raleway", sans-serif;
             display: inline-block;  
             margin-left: 6.5%;
-            padding-top: 2%;
+            padding-top: 0.5rem;
             font-size: 2rem;
             font-weight: 300;
             width:80%;
@@ -19,7 +19,7 @@
         &__opciones{
             display: inline-block;
             font-size: 1.8rem;
-            padding-top: 2%;
+            padding-top: 0.5rem;
             margin-right: 5%;
             width:5%;
             border: none;
@@ -29,10 +29,10 @@
             vertical-align: top;
         }
     }
-    &__other{
-        height: 11rem;
+    &__otherVisible{
+        height: 11em;
         position: absolute;
-        margin-top: 3%;        
+        margin-top: 0.9rem;        
         width:100%;
         z-index: 1;
         box-shadow: 0px 0.188rem 0.376rem 0px #0000004A;  
@@ -46,7 +46,7 @@
             line-height: 15px;
             letter-spacing: 3.2799999713897705px;
             text-align: left;
-            padding-top: 7.5%;
+            padding-top: 1.3rem;
             padding-left: 6.5%;
             background-color: white;
         }
@@ -55,8 +55,10 @@
         }
     }
 
-    .shadow{
-        box-shadow: 0px 0.188rem 0.376rem 0px #0000004A; 
+    &__otherHidden{
+        &__opcionesWide{
+            display:none
+        }
     }
 }
 
@@ -78,13 +80,13 @@
             
         }  
 
-        &__other{
+        &__otherVisibleWide{
             display: flex;
             justify-content: space-around;
             align-items: center;
             min-width: 45%;
             &__opcionesWide{    
-                padding-top: 3.5%;
+                padding-top: 1.5rem;
                 min-height: 4.375rem;    
                 display: flex;        
                 font-family: "Open Sans";
