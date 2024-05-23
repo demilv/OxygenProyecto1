@@ -3,6 +3,15 @@
     height:4.375rem;
     box-shadow: 0px 0.188rem 0.376rem 0px #0000004A;  
 
+    &__progreso{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 1000;
+        width:100%;
+        height:0.2rem;
+    }
+
     &__main{
         position:relative;
         &__title{

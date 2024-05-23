@@ -138,6 +138,22 @@
     color: #55DFB4;
 }
 
+.goUp{
+    min-width:2.5rem;
+    min-height: 2.5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border-color:transparent;
+    position:fixed;
+    top:75%;
+    left:90%;
+    z-index: 100;
+}
+
+.goUpOculto{
+    display: none;
+}
+
 @media only screen and (min-width: 1000px) {
     .pricing{
         width:100%; 

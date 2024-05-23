@@ -1,20 +1,16 @@
 const display = document.getElementById("Banish")
 const display2 = display.children
+const button = document.getElementsByClassName("navApp__main__opciones")[0] 
 const Width = window.innerWidth;
 
-function headeroptions(){
-    const button = document.getElementsByClassName("navApp__main__opciones")[0]               
+const goUpButton = document.getElementById("up")
+const posPricing = document.getElementsByClassName("pricing")[0]
+
+//1
+
+function headeroptions(){                 
 
     if (Width < 1000){
-        /*if (button.innerHTML=== "≡")
-        {
-            display.classList.add("navApp__otherHidden");
-            display.classList.remove("navApp__otherVisibleWide");
-        }else if(button.innerHTML=== "x"){
-            display.classList.add("navApp__otherVisible")
-            display.classList.remove("navApp__otherVisibleWide");
-        } */  
-
         if (button.innerHTML=== "x")
         {
             button.innerHTML= "≡"
@@ -40,8 +36,9 @@ function headeroptions(){
             }          
             
         }          
-    }
+    } 
 }
+
 
 document.addEventListener("DOMContentLoaded", function() {
     if (Width >= 1000) {
@@ -53,4 +50,29 @@ document.addEventListener("DOMContentLoaded", function() {
             display2[i-1].classList.remove("navApp__otherVisible__opcionesWide")            
         }
     }  
+    showButton()
 });
+
+//3
+
+function backTop(){
+    window.scrollTo(0, 0)
+}
+
+function showButton(){
+    const positionTarget = posPricing.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 2;
+    if(positionTarget < screenPosition) {
+        goUpButton.classList.add("goUp")
+        goUpButton.classList.remove("goUpOculto");
+    }else{
+        goUpButton.classList.add("goUpOculto")
+        goUpButton.classList.remove("goUp")
+    }
+}
+
+
+
+
+
+window.addEventListener('scroll', showButton)

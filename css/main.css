@@ -13,6 +13,14 @@ body {
   height: 4.375rem;
   box-shadow: 0px 0.188rem 0.376rem 0px rgba(0, 0, 0, 0.2901960784);
 }
+.navApp__progreso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 0.2rem;
+}
 .navApp__main {
   position: relative;
 }
@@ -699,6 +707,22 @@ body {
 
 .textGreen {
   color: #55DFB4;
+}
+
+.goUp {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+  border-color: transparent;
+  position: fixed;
+  top: 75%;
+  left: 90%;
+  z-index: 100;
+}
+
+.goUpOculto {
+  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
