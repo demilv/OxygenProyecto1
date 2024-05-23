@@ -5,11 +5,11 @@
 
     &__progreso{
         position:fixed;
-        top:0;
-        left:0;
+        top:0%;
+        left:0%;
         z-index: 1000;
-        width:100%;
-        height:0.2rem;
+        background-color: #08A6E4;
+        height:0.8rem;
     }
 
     &__main{

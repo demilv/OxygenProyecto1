@@ -3,6 +3,8 @@ const display2 = display.children
 const button = document.getElementsByClassName("navApp__main__opciones")[0] 
 const Width = window.innerWidth;
 
+const scrollId = document.getElementById("progreso")
+
 const goUpButton = document.getElementById("up")
 const posPricing = document.getElementsByClassName("pricing")[0]
 
@@ -53,6 +55,15 @@ document.addEventListener("DOMContentLoaded", function() {
     showButton()
 });
 
+//2
+
+function scrollPercentage() {
+    let scrollTotal = document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let userScrolled = (scrollTotal / height) * 100;
+    scrollId.style.width = userScrolled + "%";
+}
+
 //3
 
 function backTop(){
@@ -71,8 +82,11 @@ function showButton(){
     }
 }
 
+//4
 
 
 
 
+
+window.addEventListener('scroll', scrollPercentage)
 window.addEventListener('scroll', showButton)
