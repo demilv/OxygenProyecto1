@@ -84,12 +84,37 @@ function showButton(){
 
 //4
 
-let valueName = getElementById("name")
-let valueEmail = getElementById("email")
-let valueCheck = getElementById("consent")
-valueName.addEventListener("focusout", (e) => {
-    let regEmail =/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(e.target.value) ;
+let valueName = document.getElementById("name")
+let valueEmail = document.getElementById("email")
+let valueCheck = document.getElementById("consent")
 
+valueName.addEventListener("focusout", (e) =>{
+    let regName = e.target.value
+    console.log(`valor regName: ${regName.length}`)
+    if (regName.length < 2 || regName.length >100){
+        valueName.classList.add("error")        
+    }else{
+        valueName.classList.remove("error")
+    }    
+})
+
+valueEmail.addEventListener("focusout", (e) => {
+    let regEmail =/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(e.target.value);
+    console.log(regEmail)
+    if (!regEmail){
+        valueEmail.classList.add("error") 
+    }else{
+        valueEmail.classList.remove("error")
+    } 
+})
+
+valueCheck.addEventListener("change", (e)=>{
+    console.log(valueCheck.checked)
+    if (!e.target.checked){
+        valueCheck.classList.add("error") 
+    }else{
+        valueCheck.classList.remove("error")
+    }
 })
 
 
