@@ -889,6 +889,7 @@ body {
 
 .error {
   border-color: red;
+  outline: red;
 }
 
 .text1 {
