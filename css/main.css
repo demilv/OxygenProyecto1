@@ -8,6 +8,39 @@ body {
   min-width: 320px;
 }
 
+.popIn {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 60%;
+  z-index: 99999;
+}
+.popIn__inner {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 2% 2%;
+  margin-left: 10%;
+  margin-top: 20%;
+  background-color: aliceblue;
+}
+.popIn__inner__text {
+  margin-top: 9.5rem;
+  font-size: 3rem;
+}
+
+.popOut {
+  display: none;
+}
+
+#closePop {
+  background: transparent;
+  border: none;
+  margin-left: 95%;
+}
+
 .navApp {
   width: 100%;
   height: 4.375rem;

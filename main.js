@@ -3,6 +3,10 @@ const display2 = display.children
 const button = document.getElementsByClassName("navApp__main__opciones")[0] 
 const Width = window.innerWidth;
 
+let scrollTotal = document.documentElement.scrollTop;
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+let userScrolled = (scrollTotal / height) * 100;
+
 const scrollId = document.getElementById("progreso")
 
 const goUpButton = document.getElementById("up")
@@ -59,12 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //2
 
-function scrollPercentage() {
-    let scrollTotal = document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let userScrolled = (scrollTotal / height) * 100;
+function scrollPercentage() {    
     scrollId.style.width = userScrolled + "%";
 }
+
+window.addEventListener('scroll', scrollPercentage)
+
 
 //3
 
@@ -83,6 +87,8 @@ function showButton(){
         goUpButton.classList.remove("goUp")
     }
 }
+
+window.addEventListener('scroll', showButton)
 
 //4
 
@@ -198,10 +204,51 @@ function Conversor(type) {
                 console.log("wtf happened")
         }
     });
-
 }
 
+//7
 
+let openW = document.getElementById("popContainer")
+let noEntry = localStorage.getItem("noEntry") === "true";  //controlar entrada en Show()
+let shown = false // controlar entrada en getRid()
 
-window.addEventListener('scroll', scrollPercentage)
-window.addEventListener('scroll', showButton)
+function Show(){
+    if (noEntry === false){        
+        openW.classList.add("popIn");
+        openW.classList.remove("popOut")
+        shown = true;
+        noEntry = true; 
+    }
+}
+
+function popupScroll(){
+    userScrolled > 25 ? (Show(),  window.removeEventListener('scroll', popupScroll)) : null  
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Empiezo")
+    setTimeout(function() {        
+       Show()              
+    }, 5000);    
+});
+
+function getRidPopUp(){
+    if (shown === true){
+        openW.classList.add("popOut")
+        openW.classList.remove("popIn")
+        localStorage.setItem("noEntry", "true");
+    }
+}
+
+document.getElementById("closePop").addEventListener("click", function() {
+    getRidPopUp();
+});
+
+document.body.addEventListener("click", function(event) {
+    if (shown && !openW.contains(event.target)) {
+        getRidPopUp();
+    }
+});
+
+window.addEventListener('scroll', popupScroll)
+

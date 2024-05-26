@@ -1,0 +1,34 @@
+.popIn{   
+    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    height:60%;
+    z-index: 99999;
+    
+    &__inner{
+        text-align: center;
+        width:100%;
+        height:100%;
+        padding: 2% 2%;
+        margin-left: 10%;
+        margin-top: 20%;
+        background-color: aliceblue;
+        &__text{
+            margin-top: 9.5rem;
+            font-size: 3rem;
+        }
+    }
+}
+
+.popOut{
+    display:none
+}
+
+
+#closePop{
+    background: transparent;
+    border: none;
+    margin-left: 95%;
+}

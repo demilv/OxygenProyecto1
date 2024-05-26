@@ -7,9 +7,11 @@ body {
    min-width: 320px;
 }
 
+@import 'styles/popUp.scss';
 @import 'styles/header.scss';
 @import 'styles/section1sellMore.scss';
 @import 'styles/section2advertisement.scss';
 @import 'styles/section3pricing.scss';
+@import 'styles/slider.scss';
 @import 'styles/section4questions.scss';
 @import 'styles/footer.scss'
