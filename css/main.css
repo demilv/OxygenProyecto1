@@ -825,6 +825,37 @@ body {
     margin-left: 1rem;
   }
 }
+.sliderContainer {
+  width: 60%;
+  display: flex;
+  align-content: center;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  position: relative;
+}
+.sliderContainer__imgShown {
+  width: 100%;
+}
+.sliderContainer__imgNotShown {
+  display: none;
+}
+.sliderContainer__leftB, .sliderContainer__rightB {
+  position: absolute;
+  height: 10%;
+  background: none;
+  border: none;
+  color: aquamarine;
+  font-size: 2rem;
+}
+.sliderContainer__rightB {
+  top: 45%;
+  left: 95%;
+}
+.sliderContainer__leftB {
+  top: 45%;
+  left: 5%;
+}
+
 .questions {
   margin-top: 3.313rem;
   vertical-align: center;
