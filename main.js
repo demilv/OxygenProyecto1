@@ -252,3 +252,31 @@ document.body.addEventListener("click", function(event) {
 
 window.addEventListener('scroll', popupScroll)
 
+//8
+let prevSliderCounter = 1;
+let sliderCounter = 0;
+let sliderId = document.getElementById("sliderImagenes")
+let sliderChildren = sliderId.children //botones serian 0 y 1
+
+function upCounter(){
+    prevSliderCounter = sliderCounter
+    sliderCounter ++
+    if (sliderCounter > 4){
+        sliderCounter = 0
+    }
+    sliderSelection()
+}
+
+function downCounter(){
+    prevSliderCounter = sliderCounter
+    sliderCounter --
+    if (sliderCounter < 0){
+        sliderCounter = 4
+    }
+    sliderSelection()
+}
+
+function sliderSelection(){   
+    sliderChildren[prevSlider+2].classList.remove("sliderContainer__imgNotShown")
+    sliderChildren[sliderCounter+2].classList.add("sliderContainer__imgShown")
+}
