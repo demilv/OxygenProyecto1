@@ -1,76 +1,101 @@
 const display = document.getElementById("Banish")
 const display2 = display.children
 const button = document.getElementsByClassName("navApp__main__opciones")[0] 
-const Width = window.innerWidth;
-
-let scrollTotal = document.documentElement.scrollTop;
-let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-let userScrolled = (scrollTotal / height) * 100;
 
 const scrollId = document.getElementById("progreso")
+let userScrolled = 0
 
 const goUpButton = document.getElementById("up")
 const posPricing = document.getElementsByClassName("pricing")[0]
 
 const pType = document.getElementById("pricingSelector")
 
-//1
+//1 headerButtonLinks
 
-function headeroptions(){                 
+function headeroptions() {
+    const Width = window.innerWidth; 
 
-    if (Width < 1000){
-        if (button.innerHTML=== "x")
-        {
-            button.innerHTML= "≡"
-        }else if(button.innerHTML=== "≡"){
-            button.innerHTML= "x"
-        }        
+    if (Width < 1000) {
+        if (button.innerHTML === "x") {
+            button.innerHTML = "≡";
+        } else if (button.innerHTML === "≡") {
+            button.innerHTML = "x";
+        }
 
-        if (button.innerHTML=== "x"){
-            
+        if (button.innerHTML === "x") {
             display.classList.add("navApp__otherVisible");
             display.classList.remove("navApp__otherHidden");
-            for (let i = display2.length; i>=0 ; i--){
-                display2[i-1].classList.add("navApp__otherVisible__opcionesWide")
-                display2[i-1].classList.remove("navApp__otherHidden__opcionesWide")            
+            for (let i = display2.length - 1; i >= 0; i--) {
+                display2[i].classList.add("navApp__otherVisible__opcionesWide");
+                display2[i].classList.remove("navApp__otherHidden__opcionesWide");
             }
-                     
-        } else if (button.innerHTML=== "≡"){
+        } else if (button.innerHTML === "≡") {
             display.classList.add("navApp__otherHidden");
-            display.classList.remove("navApp__otherVisible");  
-            for (let i = display2.length; i>=0 ; i--){
-                display2[i-1].classList.add("navApp__otherHidden__opcionesWide")
-                display2[i-1].classList.remove("navApp__otherVisible__opcionesWide")            
-            }          
-            
-        }          
-    } 
+            display.classList.remove("navApp__otherVisible");
+            for (let i = display2.length - 1; i >= 0; i--) {
+                display2[i].classList.add("navApp__otherHidden__opcionesWide");                
+                display2[i].classList.remove("navApp__otherVisible__opcionesWide");
+            }
+        }
+    }
 }
 
+function screenSize() {
+    const Width = window.innerWidth; 
 
-document.addEventListener("DOMContentLoaded", function() {
     if (Width >= 1000) {
         display.classList.add("navApp__otherVisibleWide");
         display.classList.remove("navApp__otherHidden");
         display.classList.remove("navApp__otherVisible");
-        for (let i = display2.length; i>=0 ; i--){
-            display2[i-1].classList.add("navApp__otherVisibleWide__opcionesWide")
-            display2[i-1].classList.remove("navApp__otherVisible__opcionesWide")            
+        for (let i = display2.length - 1; i >= 0; i--) {
+            display2[i].classList.add("navApp__otherVisibleWide__opcionesWide");
+            display2[i].classList.remove("navApp__otherVisible__opcionesWide");
         }
-    }  
-    showButton()
+    } else {
+        if(display.classList[0] === "navApp__otherVisibleWide"){
+            display.classList.remove("navApp__otherVisibleWide"); 
+            display.classList.add("navApp__otherHidden")
+            for (let i = display2.length - 1; i >= 0; i--) {
+                display2[i].classList.add("navApp__otherHidden__opcionesWide")       
+                display2[i].classList.remove("navApp__otherVisibleWide__opcionesWide")      
+                button.innerHTML = "≡"           
+            }
+        }               
+        if(!display.classList === "navApp__otherVisible"){
+            display.classList.add("navApp__otherHidden");
+        }
+        if (!display2[0].classList === "navApp__otherVisible__opcionesWide"){
+            for (let i = display2.length - 1; i >= 0; i--) {
+                display2[i].classList.remove("navApp__otherVisibleWide__opcionesWide");
+                display2[i].classList.add("navApp__otherHidden__opcionesWide");
+            }
+        }
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    screenSize();
+    showButton();
 });
 
-//2
+window.addEventListener("resize", function() {
+    screenSize();
+});
 
-function scrollPercentage() {    
+//2 scrollPercentage
+
+function scrollPercentage() {   
+    let scrollTotal = document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight; 
+    let userScrolled = (scrollTotal / height) * 100;
     scrollId.style.width = userScrolled + "%";
+    console.log(userScrolled)
 }
 
 window.addEventListener('scroll', scrollPercentage)
 
 
-//3
+//3 buttonTop
 
 function backTop(){
     window.scrollTo(0, 0)
@@ -90,7 +115,7 @@ function showButton(){
 
 window.addEventListener('scroll', showButton)
 
-//4
+//4 validacionForm
 
 let valueName = document.getElementById("name")
 let valueEmail = document.getElementById("email")
@@ -131,7 +156,7 @@ valueCheck.addEventListener("change", (e)=>{
     }
 })
 
-//5
+//5 uploadForm
 
 //valueName valueEmail valueCheck
 
@@ -165,7 +190,7 @@ function onSubmit(){
    
 }
 
-//6
+//6 conversorMonedas
 //pType
 
 addEventListener("change", (e) => {
@@ -206,10 +231,10 @@ function Conversor(type) {
     });
 }
 
-//7
+//7 modal
 
 let openW = document.getElementById("popContainer")
-let noEntry = localStorage.getItem("noEntry") === "true";  //controlar entrada en Show()
+let noEntry = localStorage.getItem("noEntry") === "true";   //controlar entrada en Show()
 let shown = false // controlar entrada en getRid()
 
 function Show(){
@@ -225,8 +250,10 @@ function popupScroll(){
     userScrolled > 25 ? (Show(),  window.removeEventListener('scroll', popupScroll)) : null  
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("Empiezo")
+window.addEventListener('scroll', popupScroll)
+
+
+document.addEventListener("DOMContentLoaded", () => {
     setTimeout(function() {        
        Show()              
     }, 5000);    
@@ -250,28 +277,58 @@ document.body.addEventListener("click", function(event) {
     }
 });
 
-window.addEventListener('scroll', popupScroll)
-
-//8
+//8 Slider
 
 let sliderId = document.getElementById("sliderImagenes")
 
 class Slider {
-    constructor(sliderId, time) {
+    constructor(sliderId) {
         this.sliderId = document.getElementById(sliderId);
         this.sliderChildren = this.sliderId.children;
         this.prevSliderCounter = 1;
         this.sliderCounter = 0;
-        console.log(this)
+        this.quickButtons = this.sliderId.children.length-3
 
         this.Buttons();
         this.startAutoSlide();
+        this.createQuickButtons()
     }
 
     Buttons() {
         this.sliderId.querySelector('.sliderContainer__leftB').addEventListener('click', () => this.downCounter());
         this.sliderId.querySelector('.sliderContainer__rightB').addEventListener('click', () => this.upCounter());
     }
+
+    goToImg(choice) {
+        if (choice !== this.sliderCounter){
+            this.sliderChildren[this.sliderCounter+3].classList.remove("sliderContainer__imgShown");
+            this.sliderChildren[this.sliderCounter+3].classList.add("sliderContainer__imgNotShown");
+        }
+        this.prevSliderCounter = choice-1;
+        if(this.prevSliderCounter === -1){
+            console.log(this.sliderId.children.length-4)
+            this.prevSliderCounter = this.sliderId.children.length-4
+        }        
+        this.sliderCounter = choice;
+        this.sliderSelection();
+    }
+
+    createQuickButtons() {
+        const buttonContainer = this.sliderId.querySelector('#quickButtonsContainer');
+        for (let i = 0; i < this.quickButtons; i++) {
+            const button = document.createElement('button');            
+            button.classList.add('sliderContainer__buttonContainer__bottomButtons');
+            if (i === 0){
+                button.classList.add('mainColor');
+            }else{
+                button.classList.add('backColor');
+            }
+            button.id = `quickButton${i}`;
+            button.addEventListener('click', () => this.goToImg(i));
+            buttonContainer.appendChild(button);
+        }        
+    }
+
 
     startAutoSlide() {
         setInterval(() => this.upCounter(), 5000);        
@@ -280,7 +337,7 @@ class Slider {
     upCounter() {
         this.prevSliderCounter = this.sliderCounter;
         this.sliderCounter++;
-        if (this.sliderCounter > 4) {
+        if (this.sliderCounter >= this.quickButtons) {
             this.sliderCounter = 0;
         }
         this.sliderSelection();
@@ -289,17 +346,24 @@ class Slider {
     downCounter() {
         this.prevSliderCounter = this.sliderCounter;
         this.sliderCounter--;
-        if (this.sliderCounter < 0) {
+        if (this.sliderCounter < this.quickButtons) {
             this.sliderCounter = 4;
         }
         this.sliderSelection();
     }
 
     sliderSelection() {
-        this.sliderChildren[this.prevSliderCounter+2].classList.remove("sliderContainer__imgShown");
-        this.sliderChildren[this.prevSliderCounter+2].classList.add("sliderContainer__imgNotShown");
-        this.sliderChildren[this.sliderCounter+2].classList.remove("sliderContainer__imgNotShown");
-        this.sliderChildren[this.sliderCounter+2].classList.add("sliderContainer__imgShown");
+        const prevButton = document.getElementById(`quickButton${this.prevSliderCounter}`);
+        const currentButton = document.getElementById(`quickButton${this.sliderCounter}`);
+        console.log(this.prevSliderCounter)
+        this.sliderChildren[this.prevSliderCounter+3].classList.remove("sliderContainer__imgShown");
+        this.sliderChildren[this.prevSliderCounter+3].classList.add("sliderContainer__imgNotShown");
+        this.sliderChildren[this.sliderCounter+3].classList.remove("sliderContainer__imgNotShown");
+        this.sliderChildren[this.sliderCounter+3].classList.add("sliderContainer__imgShown");        
+        prevButton.classList.remove('mainColor');
+        prevButton.classList.add('backColor');
+        currentButton.classList.remove('backColor');
+        currentButton.classList.add('mainColor');
     }
 }
 
