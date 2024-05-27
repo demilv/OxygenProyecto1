@@ -303,14 +303,15 @@ class Slider {
         if (choice !== this.sliderCounter){
             this.sliderChildren[this.sliderCounter+3].classList.remove("sliderContainer__imgShown");
             this.sliderChildren[this.sliderCounter+3].classList.add("sliderContainer__imgNotShown");
-        }
-        this.prevSliderCounter = choice-1;
-        if(this.prevSliderCounter === -1){
-            console.log(this.sliderId.children.length-4)
-            this.prevSliderCounter = this.sliderId.children.length-4
-        }        
-        this.sliderCounter = choice;
-        this.sliderSelection();
+            this.prevSliderCounter = this.sliderCounter;
+            
+            if(this.prevSliderCounter === -1){
+                console.log(this.sliderId.children.length-4)
+                this.prevSliderCounter = this.sliderId.children.length-4
+            }        
+            this.sliderCounter = choice;
+            this.sliderSelection();
+            }
     }
 
     createQuickButtons() {
@@ -355,7 +356,6 @@ class Slider {
     sliderSelection() {
         const prevButton = document.getElementById(`quickButton${this.prevSliderCounter}`);
         const currentButton = document.getElementById(`quickButton${this.sliderCounter}`);
-        console.log(this.prevSliderCounter)
         this.sliderChildren[this.prevSliderCounter+3].classList.remove("sliderContainer__imgShown");
         this.sliderChildren[this.prevSliderCounter+3].classList.add("sliderContainer__imgNotShown");
         this.sliderChildren[this.sliderCounter+3].classList.remove("sliderContainer__imgNotShown");
