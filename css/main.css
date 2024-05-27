@@ -884,11 +884,11 @@ body {
 }
 .sliderContainer__rightB {
   top: 45%;
-  left: 95%;
+  left: 90%;
 }
 .sliderContainer__leftB {
   top: 45%;
-  left: 1%;
+  left: 7%;
 }
 .sliderContainer__buttonContainer {
   display: flex;
