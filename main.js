@@ -253,30 +253,56 @@ document.body.addEventListener("click", function(event) {
 window.addEventListener('scroll', popupScroll)
 
 //8
-let prevSliderCounter = 1;
-let sliderCounter = 0;
+
 let sliderId = document.getElementById("sliderImagenes")
-let sliderChildren = sliderId.children //botones serian 0 y 1
 
-function upCounter(){
-    prevSliderCounter = sliderCounter
-    sliderCounter ++
-    if (sliderCounter > 4){
-        sliderCounter = 0
+class Slider {
+    constructor(sliderId, time) {
+        this.sliderId = document.getElementById(sliderId);
+        this.sliderChildren = this.sliderId.children;
+        this.prevSliderCounter = 1;
+        this.sliderCounter = 0;
+        console.log(this)
+
+        this.Buttons();
+        this.startAutoSlide();
     }
-    sliderSelection()
-}
 
-function downCounter(){
-    prevSliderCounter = sliderCounter
-    sliderCounter --
-    if (sliderCounter < 0){
-        sliderCounter = 4
+    Buttons() {
+        this.sliderId.querySelector('.sliderContainer__leftB').addEventListener('click', () => this.downCounter());
+        this.sliderId.querySelector('.sliderContainer__rightB').addEventListener('click', () => this.upCounter());
     }
-    sliderSelection()
+
+    startAutoSlide() {
+        setInterval(() => this.upCounter(), 5000);        
+    }
+
+    upCounter() {
+        this.prevSliderCounter = this.sliderCounter;
+        this.sliderCounter++;
+        if (this.sliderCounter > 4) {
+            this.sliderCounter = 0;
+        }
+        this.sliderSelection();
+    }
+
+    downCounter() {
+        this.prevSliderCounter = this.sliderCounter;
+        this.sliderCounter--;
+        if (this.sliderCounter < 0) {
+            this.sliderCounter = 4;
+        }
+        this.sliderSelection();
+    }
+
+    sliderSelection() {
+        this.sliderChildren[this.prevSliderCounter+2].classList.remove("sliderContainer__imgShown");
+        this.sliderChildren[this.prevSliderCounter+2].classList.add("sliderContainer__imgNotShown");
+        this.sliderChildren[this.sliderCounter+2].classList.remove("sliderContainer__imgNotShown");
+        this.sliderChildren[this.sliderCounter+2].classList.add("sliderContainer__imgShown");
+    }
 }
 
-function sliderSelection(){   
-    sliderChildren[prevSlider+2].classList.remove("sliderContainer__imgNotShown")
-    sliderChildren[sliderCounter+2].classList.add("sliderContainer__imgShown")
-}
+document.addEventListener('DOMContentLoaded', () => {
+    new Slider('sliderImagenes');
+});
