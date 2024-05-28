@@ -801,7 +801,9 @@ body {
   border-radius: 50%;
   margin-left: 12%;
   border: none;
-  background-color: rgb(121, 45, 215);
+  background: #000000;
+  box-shadow: #55ab0e 0 -7px 5px inset;
+  color: #e0bf50;
   position: fixed;
   top: 75%;
   left: 75%;
