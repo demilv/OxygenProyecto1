@@ -1,6 +1,6 @@
 let openW = document.getElementById("popContainer")
-//let noEntry = localStorage.getItem("noEntry") === "true";   //controlar entrada en Show()
-let noEntry = false 
+let noEntry = localStorage.getItem("noEntry") === "true";   //controlar entrada en Show()
+// let noEntry = false 
 let shown = false // controlar entrada en getRid()
 let height = document.documentElement.scrollHeight - document.documentElement.clientHeight; 
 
