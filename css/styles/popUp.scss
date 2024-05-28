@@ -10,15 +10,46 @@
     
     &__inner{
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width:100%;
         height:100%;
         padding: 2% 2%;
         margin-left: 10%;
         margin-top: 20%;
         background-color: aliceblue;
+        padding-bottom: 25rem;
         &__text{
-            margin-top: 9.5rem;
+            margin-top: 3.5rem;
             font-size: 3rem;
+        }
+
+        &__input{
+            margin-top: 1rem;
+            background-color: transparent;
+            border-color: blue;
+            margin-bottom: 1rem;
+        }
+
+        &__submit{
+            width:5.125rem;
+            height:3.063rem;
+            display:block;
+            box-shadow: 1px 12px 15px 0px #07ACE64A;
+            background-color: #bce408;
+            border-radius: 1.188rem;
+            font-family: "Open Sans";
+            font-size: 0.813rem;
+            font-weight: 700;
+            line-height: 1.106rem;
+            color:#FFFFFF;                        
+        }
+        &__submit:hover{
+            box-shadow: 5px 10px 27px 0px #07ACE64A;
+            transform:scale(1.15);
+            color:red;
+            border-color: aquamarine;
         }
     }
 }
@@ -32,4 +63,11 @@
     background: transparent;
     border: none;
     margin-left: 95%;
+}
+
+#popUpForm{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

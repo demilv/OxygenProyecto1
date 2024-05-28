@@ -20,9 +20,13 @@
 </head>
 <body>
     <div id="popContainer" class="popOut">
-        <div class="popIn__inner">
+        <div class="popIn__inner">            
             <button id="closePop">X</button>
             <p class="popIn__inner__text">Subscribe to our newsletter</p>
+            <form id="popUpForm">
+                <input type="text" id="emailPopUp" name="email" class="popIn__inner__input">
+                <button type="submit" class="popIn__inner__submit" onclick="onSubmitPopUp()">Send</button>
+            </form>
         </div>
     </div>
     <header class="navApp">
