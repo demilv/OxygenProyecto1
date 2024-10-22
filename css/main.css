@@ -5,7 +5,6 @@
 }
 
 body {
-  /**/
   min-width: 320px;
 }
 
@@ -665,16 +664,18 @@ body {
   margin-bottom: 1.875rem;
 }
 .pricing__type {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  padding: 0.4em 1em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-radius: 50%;
-  width: 4rem;
-  background-color: blanchedalmond;
-  border-color: blue;
+  border-radius: 4%;
+  background-color: rgb(200, 255, 250);
+  border: none;
+  opacity: 0.4;
   box-shadow: #8af3ee 0 0 10px inset;
+  transition: all 0.5s ease;
 }
 .pricing__type:hover {
-  transform: scale(1.2);
+  opacity:1;
   color: rgb(0, 162, 255);
   animation: box 3s infinite;
 }
@@ -842,16 +843,14 @@ body {
   .pricing__type {
     grid-row: 2;
     grid-column: 1/4;
-    margin-left: 48%;
+    margin-left: 47%;
     margin-bottom: 5rem;
-    width: 4rem;
-    height: 4rem;
-    background-color: blanchedalmond;
+    max-width: 6em;
   }
   .pricing__art {
     width: 85%;
-    min-height: 78%;
-    max-height: 30rem;
+    height: 28.2rem;
+    max-height: 40rem;
     display: flex;
     flex-direction: column;
     margin-right: 3rem;
@@ -1100,6 +1099,7 @@ body {
   #questionsDivImgs {
     text-align: left;
     margin-left: 1.875rem;
+    width:80%;
   }
 }
 .footer {
