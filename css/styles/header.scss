@@ -90,22 +90,7 @@
         }  
 
         &__otherVisibleWide{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            min-width: 45%;
-            &__opcionesWide{    
-                padding-top: 1.5rem;
-                min-height: 4.375rem;    
-                display: flex;        
-                font-family: "Open Sans";
-                font-size: 0.688rem;
-                font-weight: 700;
-                line-height: 0.938rem;
-                letter-spacing: 0.205rem;
-                text-align: center;
-                color: #A5A5A5;
-            }
+            display: none;
             &__opcionesWide:hover{
                 color: #000000;
                 border-bottom: 4px solid #08A6E4;
